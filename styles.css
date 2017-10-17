@@ -1,0 +1,64 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quoteBox {
+    margin: 120px auto;
+    width: 50%;
+    border-radius: 7px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, .6);
+    font-family: 'Open Sans';
+}
+
+.quoteText {
+    padding-bottom: 40px;
+}
+
+.quoteText {
+    font-family: 'Dosis';
+    font-size: 24px;
+    color: white;
+}
+
+.author {
+    display: inline;
+}
+
+.marker {
+    font-size: 48px;
+    display: inline;
+}
+
+.buttonSet {
+    height: 100%;
+    display: inline-block;
+}
+
+.newQuoteButton {
+    color: white;
+    font-family: 'Dosis';
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: red;
+    border: none;
+    display: inline-block;
+    right: 100%;
+}
+
+.newQuoteButton:hover {
+    background-color: darkred;
+}
+
+i {
+    list-style: none;
+    display: inline;
+    color: white;
+    margin-right: 10px;
+    float: left;
+}
