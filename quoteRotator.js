@@ -25,14 +25,16 @@ $(document).ready(function() {
 
     function shareQuote() {
 
-        $(".fa-twitter-square").on("click", function(e) {
-            window.openURL("https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text='" + encodeURIComponent('"' + quote + '" ' + author));
-        });
+            var quote = document.getElementById("quote").innerText;
+            var author = document.getElementById("author").innerText;
+
+            var tweetURL = "https://twitter.com/intent/tweet?hashtags=quotes,FCC&related=freecodecamp&text='" + encodeURIComponent('"' + quote + '" ' + author);
+
+            window.open(tweetURL);
     }
 
     getQuote();
-    shareQuote();
 
     $(".newQuoteButton").on("click", getQuote);
-
+    $(".fa-twitter-square").on("click", shareQuote);
 });
