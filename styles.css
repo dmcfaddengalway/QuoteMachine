@@ -29,6 +29,10 @@ html, body {
     display: inline;
 }
 
+.details {
+    display: block;
+}
+
 .marker {
     font-size: 48px;
     display: inline;
